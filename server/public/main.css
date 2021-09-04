@@ -1,5 +1,107 @@
-html, body {
-  background-color: #eeebe4;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ffff;
   color: #28282e;
-  font-family: 'Lato', sans-serif;
+  /* font-family: 'Lato', sans-serif; */
+  font-family: 'Kaisei HarunoUmi', serif;
+  text-decoration: none;
+}
+
+a:link{
+  color:peru;
+  text-decoration-style: none;
+}
+
+a:visited{
+  color:peru;
+}
+
+#header {
+  display: flex;
+ width:90vw;
+ height: 150px;
+ background-color: aquamarine;
+ padding: 0px;
+ margin:0 auto; 
+}
+
+#logoimg {
+  width: 350px;
+  height: 150px;
+}
+
+#menu{
+  background-color:black;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+
+#topic{
+  margin:0px;
+  color:white;
+  padding:5px;
+}
+
+#main {
+  width: 90vw;
+  height: 800px;
+  background-color:darkgrey;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+#banner{
+  margin: 0px;
+  padding: 0px;
+  width: 90vw;
+  height:200px;
+  background-color: burlywood;
+}
+
+#discount{
+  margin: 0px;
+  padding: 0px;
+  width:90vw;
+  height: 600px;
+  background-color: darkorange;
+}
+
+#newslist{
+  background-color: darksalmon;
+  width: 60vw;
+  height: 100%;
+  float:left
+}
+
+#right-container{
+  display: flex;
+  flex-direction: column;
+  background-color: darkseagreen;
+  margin-left: 60vw;
+  width: auto;
+  height: 100%;
+}
+
+#announcement{
+  width: 100%;
+  background-color: darkslategrey;
+  height: 200px;
+}
+
+#daily{
+  background-color: deepskyblue;
+  flex-grow: 1;
+}
+
+#footer {
+  color: peru;
+  width: 90vw;
+  height: 20px;
+  background-color:black;
+  padding: 0px;
+  margin:0 auto; 
+  text-align: center;
 }

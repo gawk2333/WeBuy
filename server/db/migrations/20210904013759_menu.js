@@ -2,7 +2,7 @@
 exports.up = function(knex) {
   return knex.schema.createTable('Menu',table=>{
     table.increments('id').primary()
-    table.string('topic')
+    table.string('name')
   })
 };
 

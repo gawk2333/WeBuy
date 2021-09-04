@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react'
 
-import { getFruit } from '../apis/fruit'
 
-const Fruit = () => {
-  const [fruit, setFruit] = useState([])
+const Topic = (prop) => {
+  const [Title, setFruit] = useState([])
 
   useEffect(() => {
     refreshFruit()
@@ -14,15 +13,7 @@ const Fruit = () => {
       .then(fruit => setFruit(fruit))
   }
 
-  return (
-    <>
-      <ul>
-        {fruit.map(aFruit => {
-          return <li key={aFruit.id}>{aFruit.name}</li>
-        })}
-      </ul>
-    </>
-  )
+  return null
 }
 
-export default Fruit
+export default Topic

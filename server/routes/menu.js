@@ -4,9 +4,9 @@ const router = express.Router()
 const db = require('../db/db')
 
 router.get('/', (req, res) => {
-  return db.getAllFruit()
-    .then(fruit => {
-      return res.json(fruit)
+  return db.getMenu()
+    .then(topics => {
+      return res.json(topics)
     })
     .catch(err => {
       console.log(err.message)
