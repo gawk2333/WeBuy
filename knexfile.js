@@ -6,28 +6,22 @@ module.exports = {
   development: {
     client: 'sqlite3',
     connection: {
-      filename: path.join(__dirname, '/dev.sqlite3')
-    },
-    useNullAsDefault: true
-  },
-  test: {
-    client: 'sqlite3',
-    connection: {
-      filename: ':memory:'
+      filename: path.join(__dirname,'./server/db/dev.sqlite3')
     },
     migrations: {
-      directory: path.join(__dirname, '/migrations')
+      directory: path.join(__dirname, './server/db/migrations')
     },
     seeds: {
-      directory: path.join(__dirname, '/seeds')
+      directory: path.join(__dirname, './server/db/seeds')
     },
-    useNullAsDefault: true
+    useNullAsDefault:true
   },
+
   staging: {
     client: 'postgresql',
     connection: {
       database: 'my_db',
-      user: 'username',
+      user:     'username',
       password: 'password'
     },
     pool: {
@@ -43,7 +37,7 @@ module.exports = {
     client: 'postgresql',
     connection: {
       database: 'my_db',
-      user: 'username',
+      user:     'username',
       password: 'password'
     },
     pool: {
@@ -55,4 +49,4 @@ module.exports = {
     }
   }
 
-}
+};
