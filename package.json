@@ -1,10 +1,10 @@
 {
-  "name": "boilerplate-react-knex",
+  "name": "webuy",
   "version": "0.0.1",
-  "description": "A React and knex starter",
-  "repository": "https://github.com/dev-academy-challenges/boilerplate-react-knex.git",
+  "description": "A website to show where to buy",
+  "repository": "https://github.com/gawk2333/WeBuy",
   "main": "server/index.js",
-  "author": "EDA",
+  "author": "Kang",
   "license": "ISC",
   "scripts": {
     "start": "node server",
@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "knex": "^0.95.4"
+    "knex": "^0.95.11"
   },
   "devDependencies": {
     "@babel/core": "7.13.1",
@@ -59,7 +59,8 @@
     "npm-run-all": "^4.1.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "sqlite3": "^5.0.2",
+    "react-router-dom": "5.3.0",
+    "sqlite3": "^4.2.0",
     "superagent": "6.1.0",
     "supertest": "^6.1.3",
     "webpack": "5.24.0",

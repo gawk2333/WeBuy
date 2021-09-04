@@ -1,12 +1,15 @@
 import React from 'react'
-
-import Fruit from './Fruit'
+import {Route} from 'react-router-dom'
+import Header from './Header'
+import Main from './Main'
+import Footer from './Footer'
 
 const App = () => {
   return (
     <>
-      <h1>Hola! Fruit time!</h1>
-      <Fruit />
+      <Route path = '/' component = {Header} />
+      <Route path = '/' component = {Main} />
+      <Route path = '/' component = {Footer} />
     </>
   )
 }
